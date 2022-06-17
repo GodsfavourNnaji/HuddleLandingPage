@@ -1,0 +1,84 @@
+body{
+    /*padding: 2em;*/
+}
+
+/*Header*/
+.header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-image: url(./images/bg-hero-desktop.svg);
+    margin-bottom: 1em;
+}
+.logo{
+    background-color: gray;
+    padding-bottom: 5em;
+    padding-top: 5em;
+    padding-left: 2em;
+}
+.try{
+    padding-left: 70%;
+    background-color: gray;
+    padding-bottom: 5em;
+    padding-top: 5em;
+}
+#trybutton{
+
+}
+.community{
+padding-left: 2em;
+}
+.community-image {
+    padding-left: 5em;
+    padding-top: 5em;
+}
+
+
+/*Body*/
+.body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
+    padding: 2em;
+}
+
+.grow{
+    order: 1;
+    margin-bottom: 3em;
+    padding-top: 5em;
+}
+.grow-image{
+    order: 2;
+    margin-bottom: 3em;
+    padding-left: 5em;
+}
+
+.conversations{
+    order: 4;
+    margin-bottom: 3em;
+    padding-top: 5em;
+}
+.conversations-image{
+    order: 3;
+    margin-bottom: 3em;
+}
+
+.users{
+    order: 5;
+    margin-bottom: 3em;
+    padding-top: 5em;
+}
+.users-image{
+    order: 6;
+    margin-bottom: 3em;
+    padding-left: 5em;
+}
+
+/*Start*/
+.start{
+    padding: 2em;
+}
+
+/*Footer*/
+footer{
+    padding: 2em;
+}
