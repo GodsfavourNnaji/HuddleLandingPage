@@ -1,5 +1,10 @@
 body{
     /*padding: 2em;*/
+    color: hsl(192, 100%, 9%);
+}
+a{
+    text-decoration: none;
+    color: none;
 }
 
 /*Header*/
@@ -22,16 +27,34 @@ body{
     padding-top: 5em;
 }
 #trybutton{
-
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+    border: none;
+}
+#trybutton:hover{
+    opacity: 50%;
+    cursor: grab;
 }
 .community{
-padding-left: 2em;
+    padding-left: 2em;
+    padding-top: 25%;
 }
 .community-image {
     padding-left: 5em;
     padding-top: 5em;
 }
-
+#startbutton{
+    border-radius: 15px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+}
+#startbutton:hover{
+    opacity: 50%;
+}
 
 /*Body*/
 .body{
@@ -76,9 +99,65 @@ padding-left: 2em;
 /*Start*/
 .start{
     padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.start1{
+    text-align: center;
 }
 
 /*Footer*/
 footer{
     padding: 2em;
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.footer-logo{
+    color: white;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.socials div i{
+    margin-left: 17%;
+}
+
+@media(max-width: 375px){
+    .header{
+        background-image: url(./images/bg-hero-desktop.svg);
+        margin-bottom: 1em;
+    }
+    .logo{
+    }
+    .try{
+        /*padding-left: 70%;*/
+        /*background-color: gray;*/
+        padding-bottom: 5em;
+        padding-top: 5em;
+    }
+    .body{
+        display: grid;
+        grid-template-columns: none;
+    }
+    .conversations{
+        order: 3;
+    }
+    .conversations-image{
+        order: 4;
+    }
+    .users-image{
+        padding-left: none;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: none;
+    }
 }
